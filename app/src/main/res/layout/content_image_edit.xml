@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_image_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vibecampo.android.image.ImageEditActivity"
+    tools:showIn="@layout/activity_image_edit">
+
+    <LinearLayout
+        android:id="@+id/editActionsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@color/divider">
+            <ViewStub
+                android:id="@+id/rotateOptionsVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inflatedId="@id/rotateOptionsVS"/>
+            <ViewStub
+                android:id="@+id/ratioOptionsVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inflatedId="@id/ratioOptionsVS"/>
+            <ViewStub
+                android:id="@+id/shapeOptionsVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inflatedId="@id/shapeOptionsVS"/>
+            <ViewStub
+                android:id="@+id/filterOptionsVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inflatedId="@id/filterOptionsVS"/>
+            <ViewStub
+                android:id="@+id/blurOptionsVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inflatedId="@id/blurOptionsVS"/>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/rotateBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_crop_rotate_black_24dp"
+                    android:text="@string/rotate" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/cornersBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_transform_black_24dp"
+                    android:text="@string/corners" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/colorBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_filter_vintage_black_24dp"
+                    android:text="@string/color"
+                    android:visibility="gone"/>
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/ratioBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_image_aspect_ratio_black_24dp"
+                    android:text="@string/ratio" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/shapeBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_crop_free_black_24dp"
+                    android:text="@string/shape" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/filterBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_camera_roll_black_24dp"
+                    android:text="@string/filter"
+                    android:visibility="gone"/>
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/blurBtn"
+                    android:visibility="gone"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_blur_linear_black_24dp"
+                    android:text="@string/blur" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/pickBtn"
+                    style="@style/Button.PhotoEdit.Action"
+                    android:drawableTop="@drawable/ic_photo_library_black_24dp"
+                    android:text="@string/image" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/editActionsView">
+
+        <ke.co.toshngure.basecode.images.simplecrop.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:scv_crop_mode="fit_image"
+            app:scv_frame_color="@color/colorAccent"
+            app:scv_frame_stroke_weight="1dp"
+            app:scv_guide_color="@color/colorAccent"
+            app:scv_guide_show_mode="show_always"
+            app:scv_guide_stroke_weight="1dp"
+            app:scv_handle_color="@color/colorAccent"
+            app:scv_handle_show_mode="show_always"
+            app:scv_handle_size="14dp"
+            app:scv_min_frame_size="50dp"
+            app:scv_overlay_color="@color/overlay"
+            app:scv_touch_padding="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "514471932591",
+    "firebase_url": "https://vibecampo-a25c5.firebaseio.com",
+    "project_id": "vibecampo-a25c5",
+    "storage_bucket": "vibecampo-a25c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514471932591:android:6caec6e19a0cb5d2",
+        "android_client_info": {
+          "package_name": "com.vibecampo.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514471932591-38ed3chk82vdulukgmj32d5b4l0t87j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vibecampo.android",
+            "certificate_hash": "668F27825AF264EE6373799B6AC99DC0A3808211"
+          }
+        },
+        {
+          "client_id": "514471932591-lb7vsglfubep99v80t436einln6uf2f9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vibecampo.android",
+            "certificate_hash": "3936730129E4BF8AA992297893FCA3BACD835CEF"
+          }
+        },
+        {
+          "client_id": "514471932591-87et5p5ln9dr2uv09c43eebp1lnvvt48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBDVq2t_oTyZpHfrAJuRLE-QdAVB8WzuE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514471932591-87et5p5ln9dr2uv09c43eebp1lnvvt48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

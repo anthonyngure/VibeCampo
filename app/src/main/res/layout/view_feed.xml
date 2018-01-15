@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="0dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp">
+
+        <ke.co.toshngure.basecode.images.NetworkImage
+            android:id="@+id/publisherAvatarNI"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:niCircled="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/Text.Title"
+            android:id="@+id/storyTypeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_story_type"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <LinearLayout
+            android:id="@+id/userView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/publisherAvatarNI"
+            android:layout_toEndOf="@id/publisherAvatarNI"
+            android:layout_toLeftOf="@id/storyTypeTV"
+            android:layout_toStartOf="@id/storyTypeTV"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="@dimen/list_row_padding">
+
+
+            <TextView
+                android:id="@+id/publisherNameTV"
+                style="@style/Text.Title.Big" />
+
+            <TextView
+                android:id="@+id/communityNameTV"
+                style="@style/Text.Title"
+                android:visibility="visible"/>
+
+            <ke.co.toshngure.basecode.view.MaterialTextView
+                android:id="@+id/createdAtTV"
+                style="@style/Text.Time"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--TitleView-->
+    <LinearLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/list_row_padding"
+        android:paddingRight="@dimen/list_row_padding"
+        android:paddingBottom="@dimen/list_row_padding">
+        <TextView
+            android:id="@+id/titleTV"
+            style="@style/Text.Title"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:text="@string/appbar_scrolling_view_behavior"
+            android:ellipsize="end"
+            android:layout_marginBottom="2dp"/>
+
+        <include layout="@layout/horizontal_separator"/>
+    </LinearLayout>
+
+    <!--Text-->
+    <ke.co.toshngure.basecode.view.MaterialTextView
+        style="@style/Text.Body"
+        android:id="@+id/textTV"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+
+    <ke.co.toshngure.basecode.images.CollageView
+        android:id="@+id/collageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"/>
+
+
+
+    <TextView
+        android:id="@+id/infoTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+    <include layout="@layout/horizontal_separator"/>
+
+    <!--Action buttons-->
+    <include layout="@layout/cell_feed_actions" />
+
+
+</LinearLayout>

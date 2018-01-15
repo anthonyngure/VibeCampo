@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context="com.vibecampo.android.activity.MainActivity"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        style="@style/Text.Title.Big"
+        android:text="@string/vibe_to"
+        android:paddingBottom="@dimen/list_row_padding"
+        android:paddingTop="@dimen/list_row_padding"/>
+
+    <include layout="@layout/horizontal_separator"/>
+
+    <ke.co.toshngure.basecode.view.SimpleListItemView
+        android:id="@+id/toTimelineOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sli_Title="My timeline"
+        app:sli_SubTitle="Vibe will be seen by all followers"
+        app:sli_DividerVisible="true"/>
+
+
+    <ke.co.toshngure.basecode.view.SimpleListItemView
+        android:id="@+id/toCommunityOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sli_Title="A community"
+        app:sli_SubTitle="Post to community members"
+        app:sli_DividerVisible="false"/>
+
+
+</LinearLayout>

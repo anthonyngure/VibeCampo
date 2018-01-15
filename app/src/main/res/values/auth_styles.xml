@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Laysan Incorporation
+  ~ Website http://laysan.co.ke
+  ~ Tel +254723203475/+254706356815
+  -->
+
+<resources>
+
+
+    <style name="METAuthField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="met_primaryColor">@android:color/white</item>
+        <item name="met_baseColor">@android:color/white</item>
+        <item name="met_textColorHint">@android:color/white</item>
+        <item name="met_floatingLabelTextColor">@android:color/white</item>
+        <item name="met_textColor">@color/colorAccent</item>
+        <item name="met_iconPadding">8dp</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="TextAppearance.Counter.Auth" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="AuthButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="AuthTextField" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AuthTextField.Phone" parent="AuthTextField">
+        <item name="android:inputType">phone</item>
+        <item name="android:hint">@string/phone_number</item>
+        <item name="android:id">@id/phoneET</item>
+    </style>
+
+    <style name="AuthTextField.Email" parent="AuthTextField">
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">@string/hint_email</item>
+        <item name="android:id">@id/emailET</item>
+    </style>
+
+    <style name="AuthTextField.Name" parent="AuthTextField">
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:hint">@string/hint_name</item>
+        <item name="android:id">@id/nameET</item>
+    </style>
+
+
+    <style name="AuthTextField.Password" parent="AuthTextField">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">@string/hint_password</item>
+        <item name="android:id">@id/passwordET</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Counter.Auth</item>
+    </style>
+
+    <style name="TextInputLayout.Username" parent="TextInputLayout">
+        <item name="android:id">@id/usernameTIL</item>
+        <item name="counterEnabled">false</item>
+    </style>
+
+    <style name="TextInputLayout.Password" parent="TextInputLayout">
+        <item name="android:id">@id/passwordTIL</item>
+        <item name="passwordToggleTint">@color/colorAccent</item>
+        <item name="passwordToggleEnabled">true</item>
+        <item name="counterEnabled">false</item>
+    </style>
+
+    <style name="TextInputLayout.Phone" parent="TextInputLayout">
+        <item name="android:id">@id/phoneTIL</item>
+        <item name="counterMaxLength">10</item>
+    </style>
+
+    <style name="TextInputLayout.Name" parent="TextInputLayout">
+        <item name="android:id">@id/nameTIL</item>
+        <item name="counterMaxLength">50</item>
+    </style>
+
+    <style name="TextInputLayout.Email" parent="TextInputLayout">
+        <item name="android:id">@id/emailTIL</item>
+        <item name="counterMaxLength">50</item>
+    </style>
+
+</resources>

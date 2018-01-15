@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2016. VibeCampo Social Network
+  ~
+  ~ Website : http://www.vibecampo.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/list_row_padding"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ke.co.toshngure.basecode.images.NetworkImage
+            android:id="@+id/publisherAvatarNI"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/userView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_row_padding"
+            android:layout_marginStart="@dimen/list_row_padding">
+
+            <TextView
+                android:id="@+id/publisherNameTV"
+                style="@style/Text.Title.Big"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:singleLine="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Text-->
+    <ke.co.toshngure.basecode.view.MaterialTextView
+        style="@style/Text.Body"
+        android:id="@+id/textTV"
+        android:layout_marginBottom="@dimen/list_row_padding"
+        android:paddingLeft="@dimen/comment_avatar_size"
+        android:paddingStart="@dimen/comment_avatar_size"
+        android:layout_marginLeft="@dimen/list_row_padding"
+        android:layout_marginStart="@dimen/list_row_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_row_padding"
+        android:layout_marginStart="@dimen/list_row_padding"
+        android:paddingLeft="@dimen/comment_avatar_size"
+        android:paddingStart="@dimen/comment_avatar_size">
+
+        <ke.co.toshngure.basecode.view.MaterialTextView
+            style="@style/Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createdAtTV"
+            android:layout_gravity="start"/>
+
+        <TextView
+            style="@style/Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:text="Like"/>
+
+        <TextView
+            style="@style/Text.Time"
+            android:id="@+id/likesCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:text="Like"/>
+
+    </LinearLayout>
+
+</LinearLayout>

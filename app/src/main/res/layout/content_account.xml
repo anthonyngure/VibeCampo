@@ -1,0 +1,133 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/CardViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/profileSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_person_black_24dp"
+                    app:sli_SubTitle="@string/profile_summary"
+                    app:sli_Title="@string/profile" />
+                
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/updateUserNameSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_person_black_24dp"
+                    app:sli_SubTitle="@string/update_user_name"
+                    app:sli_Title="@string/user_name" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/updatePhoneSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_phone_android_black_24dp"
+                    app:sli_SubTitle="@string/update_phone"
+                    app:sli_Title="@string/phone_number" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/updateEmailSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_email_black_24dp"
+                    app:sli_SubTitle="@string/update_email"
+                    app:sli_Title="@string/hint_email" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/passwordSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_vpn_key_black_24dp"
+                    app:sli_SubTitle="@string/change_password_summary"
+                    app:sli_Title="@string/change_password" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/chatPrivacySIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_visibility_black_24dp"
+                    app:sli_SubTitle="@string/chat_privacy_summary"
+                    app:sli_Title="@string/title_activity_chat_privacy" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/accountPrivacySIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_lock_black_24dp"
+                    app:sli_SubTitle="@string/account_privacy_summary"
+                    app:sli_Title="@string/title_activity_account_privacy" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:visibility="gone"
+                    android:id="@+id/newsSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_dvr_black_24dp"
+                    app:sli_SubTitle="@string/summary_news_and_alerts"
+                    app:sli_Title="@string/title_activity_news" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:visibility="gone"
+                    android:id="@+id/reportSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_bug_report_black_24dp"
+                    app:sli_SubTitle="@string/report_problem_summary"
+                    app:sli_Title="@string/report_problem" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:id="@+id/signOutSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_sign_out_black_24dp"
+                    app:sli_SubTitle="@string/sign_out_summary"
+                    app:sli_Title="@string/sign_out" />
+
+                <ke.co.toshngure.basecode.view.SimpleListItemView
+                    android:visibility="gone"
+                    android:id="@+id/deleteAccountSIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:sli_Drawable="@drawable/ic_cancel_black_24dp"
+                    app:sli_DividerVisible="false"
+                    app:sli_SubTitle="@string/delete_account_summary"
+                    app:sli_Title="@string/delete_account" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

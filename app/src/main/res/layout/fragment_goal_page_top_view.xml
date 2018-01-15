@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.vibecampo.android.goals.fragment.GoalPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/list_row_padding">
+
+        <TextView
+            android:id="@+id/nameTV"
+            style="@style/Text.Title.Big"
+            android:text="@string/app_name"
+            android:layout_marginBottom="3dp"/>
+
+        <include layout="@layout/horizontal_separator" />
+
+        <TextView
+            android:id="@+id/publisherNameTV"
+            style="@style/Text.Title"
+            android:text="@string/app_name"
+            android:layout_marginTop="@dimen/list_row_padding"/>
+
+        <TextView
+            android:id="@+id/descriptionTV"
+            style="@style/Text" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center">
+
+
+        <TextView
+            android:id="@+id/vibersCountTV"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:id="@+id/checkInsCountTV"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+
+        <TextView
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/checkInTV"
+            android:text="@string/check_in"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Text.Title.Big"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/list_row_padding"
+        android:text="@string/leaders_board"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/layout_auth_backgrounds"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/METAuthField"
+                android:id="@+id/nameMET"
+                android:hint="@string/hint_fullname"
+                app:met_iconLeft="@drawable/ic_person_black_24dp"
+                android:inputType="text|textNoSuggestions|textPersonName" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/METAuthField"
+                android:id="@+id/emailMET"
+                android:hint="@string/hint_email"
+                app:met_iconLeft="@drawable/ic_email_black_24dp"
+                android:inputType="textEmailAddress"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/METAuthField"
+                android:id="@+id/phoneMET"
+                android:hint="@string/phone_number"
+                app:met_iconLeft="@drawable/ic_phone_android_black_24dp"
+                android:inputType="phone"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/METAuthField"
+                android:id="@+id/passwordMET"
+                android:hint="@string/hint_password"
+                app:met_iconLeft="@drawable/ic_vpn_key_black_24dp"
+                android:inputType="textPassword" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/METAuthField"
+                android:id="@+id/confirmPasswordMET"
+                android:hint="@string/hint_confirm_password"
+                android:imeOptions="actionDone"
+                app:met_iconLeft="@drawable/ic_vpn_key_black_24dp"
+                android:inputType="textPassword"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_auth_button"
+                android:id="@+id/signUpBtn"
+                android:text="@string/sign_up"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="@string/already_have_an_account"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+                <TextView
+                    android:id="@+id/signInBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

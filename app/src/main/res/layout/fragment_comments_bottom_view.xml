@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. VibeCampo Social Network
+  ~
+  ~ Website : http://www.vibecampo.com
+
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+
+    <include layout="@layout/horizontal_separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp">
+
+        <ImageButton
+            android:id="@+id/emojiButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_insert_emoticon_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:gravity="bottom"
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_send_black_24dp"
+            android:tint="@color/colorAccent"
+            android:saveEnabled="false"
+            android:clickable="false"
+            android:layout_gravity="bottom"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="list_row_padding">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="button_expertise">24dp</dimen>
+    <dimen name="button_institution">24dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="recent_photos_bottom_sheet">180dp</dimen>
+    <dimen name="backdrop_layout_height">220dp</dimen>
+
+    <dimen name="design_fab_size_normal" tools:override="true">64dp</dimen>
+    <dimen name="comment_avatar_size">32dp</dimen>
+
+</resources>

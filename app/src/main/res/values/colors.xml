@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009E60</color>
+    <color name="colorPrimaryDark">#016b41</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="authOverlay">#b4009e60</color>
+
+
+    <color name="action_mode">#02d986</color>
+
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+</resources>

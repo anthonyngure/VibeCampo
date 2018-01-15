@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="phoneET" type="id">phoneET</item>
+    <item name="emailET" type="id">emailET</item>
+    <item name="nameET" type="id">nameET</item>
+    <item name="usernameET" type="id">usernameET</item>
+    <item name="passwordET" type="id">passwordET</item>
+    <item name="usernameTIL" type="id">usernameTIL</item>
+    <item name="passwordTIL" type="id">passwordTIL</item>
+    <item name="emailTIL" type="id">emailTIL</item>
+    <item name="nameTIL" type="id">nameTIL</item>
+    <item name="phoneTIL" type="id">phoneTIL</item>
+    <item name="fab" type="id">fab</item>
+</resources>

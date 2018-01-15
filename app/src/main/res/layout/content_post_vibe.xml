@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vibecampo.android.feed.activity.PostVibeActivity"
+    tools:showIn="@layout/activity_post_vibe">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/list_row_padding"
+                android:background="@drawable/background_chips">
+
+                <TextView
+                    android:id="@+id/targetTV"
+                    style="@style/Text.Title.Big"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:text="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/selectedPhotosTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/selected_photos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <ke.co.toshngure.basecode.images.CollageView
+                android:id="@+id/collageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"/>
+
+            <EditText
+                android:id="@+id/titleET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLines="2"
+                android:minLines="1"
+                android:gravity="top"
+                android:hint="@string/hint_vibe_title"
+                android:inputType="textMultiLine|textCapSentences"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@null"/>
+
+            <include layout="@layout/horizontal_separator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_row_padding">
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:id="@+id/emojiButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="@dimen/list_row_padding"
+                    android:src="@drawable/ic_insert_emoticon_black_24dp"
+                    android:tint="@color/colorPrimary" />
+
+                <com.vanniktech.emoji.EmojiEditText
+                    android:id="@+id/textET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="8"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/list_row_padding"
+                    android:hint="@string/hint_new_vibe"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:imeOptions="actionSend"
+                    android:background="@null"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_separator"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_row_padding"
+                android:orientation="horizontal">
+
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/photosBtn"
+                    style="@style/Button.NewVibe.Action"
+                    android:layout_width="wrap_content"
+                    android:drawableTop="@drawable/ic_photo_black_24dp"
+                    android:text="@string/image" />
+
+                <ke.co.toshngure.basecode.view.MaterialButton
+                    android:id="@+id/cameraBtn"
+                    style="@style/Button.NewVibe.Action"
+                    android:layout_width="wrap_content"
+                    android:drawableTop="@drawable/ic_camera_alt_black_24dp"
+                    android:text="@string/camera" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

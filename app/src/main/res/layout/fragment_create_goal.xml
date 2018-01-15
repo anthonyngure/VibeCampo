@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vibecampo.android.goals.fragment.CreateGoalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/header">
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_a_goal_in"/>
+
+            <TextView
+                android:id="@+id/headerTV"
+                style="@style/Text.Title.Big"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nameMET"
+                style="@style/METField"
+                android:hint="@string/hint_goal_name"
+                android:inputType="text"
+                app:met_singleLineEllipsis="true"
+                app:met_clearButton="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/descriptionMET"
+                style="@style/METField"
+                android:hint="@string/hint_goal_description"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:minLines="4"
+                android:maxLines="7"
+                android:gravity="bottom"/>
+
+            <Button
+                android:id="@+id/continueBtn"
+                style="@style/AuthButton"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/continue_"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

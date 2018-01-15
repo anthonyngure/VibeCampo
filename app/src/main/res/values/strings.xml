@@ -1,0 +1,441 @@
+<resources>
+    <string name="app_name">VibeCampo</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="pref_user">pref_user</string>
+    <string name="obsolete_info">Hey <![CDATA[<b><font color=#388E3C>%1$s</b>]]>, The version of VibeCampo that you are using is obsolete. as of  <![CDATA[<b><font color=#FF9800>%2$s</b>]]>, Please download the latest version to continue using VibeCampo.</string>
+    <string name="pref_email">pref_email</string>
+    <string name="pref_phone">pref_phone</string>
+    <string name="sign_in">Login</string>
+    <string name="sign_up">Join VibeCampo</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_about">About Us</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_contacts">Contact Us</string>
+    <string name="title_search">Search</string>
+    <string name="title_chats">Chats</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="hint_email_username">Username or email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="hint_fullname">Full name</string>
+    <string name="pref_last_stats_refresh">last_stats_refresh</string>
+    <string name="title_post">Post</string>
+    <string name="title_ambassadors">Ambassadors</string>
+    <string name="title_swag">Swag</string>
+    <string name="title_goals">Goals</string>
+    <string name="title_communities">Communities</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="following">Following</string>
+    <string name="tips">Tips</string>
+    <string name="followers">Followers</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="read_more_format">%1$s <![CDATA[<b><font color=#808080>read more…</b>]]>.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_password">pref_password</string>
+    <string name="title_activity_vibe_to">Vibe to</string>
+    <string name="selected_photos">Selected photos</string>
+    <string name="send">Send</string>
+    <string name="hint_new_vibe">Now write your vibe here</string>
+    <string name="image">Photo</string>
+    <string name="camera">Camera</string>
+    <string name="guide_recent_photos">Recent photos.</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="message_maximum_photos_reached">You cannot add more than 3 photos.</string>
+    <string name="title_activity_image_edit">Edit Photo</string>
+    <string name="crop">Crop</string>
+    <string name="left">Left</string>
+    <string name="read_more">Read more</string>
+    <string name="right">Right</string>
+    <string name="blur">Blur</string>
+    <string name="ratio">Ratio</string>
+    <string name="category">Category</string>
+    <string name="ellipsized_text">%1$s …</string>
+    <string name="shape">Shape</string>
+    <string name="filter">Filter</string>
+    <string name="rotate">Rotate</string>
+    <string name="corners">Corners</string>
+    <string name="color">Color</string>
+    <string name="hint_vibe_title">Title of your vibe</string>
+    <string name="post_to_a_community">Vibe to a community</string>
+    <string name="posting_to">Posting to %1$s</string>
+    <string name="vibe_to">Vibe to</string>
+    <string name="message_sending">Sending…</string>
+    <string name="account">Account</string>
+    <string name="action_search">Search</string>
+    <string name="pref_new_vibe_title">pref_new_vibe_title</string>
+    <string name="pref_new_vibe_text">pref_new_vibe_text</string>
+    <string name="delete">Delete</string>
+    <string name="title_delete_account">Delete account</string>
+
+    <string name="search_hint">Search&#8230;</string>
+    <string name="hint_prompt">Speak an item name or a number</string>
+
+    <string name="cd_up_button">Up navigation button</string>
+    <string name="cd_voice_search">Voice search</string>
+    <string name="cd_clear_button">Clear field</string>
+    <string name="cd_suggestion_icon">List item icon</string>
+
+    <string name="host">www.vibecampo.com</string>
+    <string name="vc_slogan">Talents, Skills and Interests Network.</string>
+    <string name="settings">Settings</string>
+    <string name="join">Join</string>
+    <string name="invite">Invite friends</string>
+    <string name="hint_verification_code">Code</string>
+    <string name="error_connection">Please check your network status!</string>
+    <string name="retry">Retry</string>
+    <string name="profile">Profile</string>
+    <string name="gender">Gender</string>
+    <string name="placeholder_name">VibeCampo Placeholder Name @Placeholder</string>
+    <string name="type_your_message">Message</string>
+    <string name="placeholder_message">
+        "Hey this is just a place holder message in a @MaterialTextView that takes care of"
+        "#hashtags, @mentions and web links http://www.vibecampo.com"</string>
+    <string name="start_restore_conversation_info">Tap \'Friends\' to start a chat with a friend or Tap \'Restore\' to restore previous chats.</string>
+    <string name="placeholder_time">FEB, 14 2016.</string>
+    <string name="title_activity_invites">Invite Friends</string>
+    <string name="placeholder_number">0723203475</string>
+    <string name="online">online</string>
+    <string name="name_and_username_format">%1$s(\@%2$s)</string>
+    <string name="username_format">\@%1$s</string>
+    <string name="delete_account">Delete my account</string>
+    <string name="report_problem">Report a problem</string>
+    <string name="friends">Friends</string>
+    <string name="report_problem_summary">Tell us what problems you are experiencing using VibeCampo</string>
+    <string name="delete_account_summary">Delete your account completely from VibeCampo</string>
+    <string name="profile_summary">See your VibeCampo profile.</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="account_privacy_summary">Change vibes, comments, follows and phone number privacy.</string>
+    <string name="chat_privacy_summary">Change online status, writing status, last seen, and presence status privacy.</string>
+    <string name="online_status_privacy">Hide or show your online status to the people you chat with.</string>
+    <string name="last_seen_privacy">Hide or show your last seen status to people you chat with.</string>
+    <string name="writing_status_privacy">Hide or show typing status to the people you chat with.</string>
+    <string name="presence_status_privacy">Hide or show your presence in the chat to the people you chat with.</string>
+    <string name="title_activity_account_privacy">Account Privacy</string>
+    <string name="title_activity_chat_privacy">Chat Privacy</string>
+    <string name="title_activity_comments">Comments</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string name="just_now">now</string>
+    <string name="counters_format">%1$d</string>
+    <string name="title_activity_new_vibe">Send your vibe</string>
+    <string name="report">Report</string>
+    <string name="see_more_images_format">View %1$d more images</string>
+    <string name="title_activity_report">Report</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="placeholder_user_stats">...</string>
+    <string name="vibe">Vibe</string>
+    <string name="edit_profile">Edit profile.</string>
+    <string name="pref_refreshing_data_sounds">refreshing_data_sounds</string>
+    <string name="messages_notification">Messages notification</string>
+    <string name="typing">typing…</string>
+    <string name="action_change_background">Change background</string>
+    <string name="hint_sign_in_id">Phone, Email or Username</string>
+    <string name="sign_up_terms_of_service_notice">By clicking \'Sign Up\'  you agree to our Terms of Service and Privacy Policy.</string>
+    <string name="action_present">Present</string>
+    <string name="lorem_text">#hashtag, @mention, link http://www.vibecampo.com
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit
+        vel semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus.
+    </string>
+    <string name="birthday">Birthday</string>
+    <string name="comment_hint">Write your comment</string>
+    <string name="title_activity_communities">Join Communities</string>
+    <string name="pref_added_communities">added_communities</string>
+    <string name="leave">Leave</string>
+    <string name="title_activity_sign_in">Sign In</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="pref_user_id">user_id</string>
+    <string name="verify_email">Verify Email Address</string>
+    <string name="pref_name">name</string>
+    <string name="use_email">Use email address.</string>
+    <string name="use_phone">Use phone number.</string>
+    <string name="verify_phone">Verify Phone Number</string>
+    <string name="pref_verification_code">Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="not_my_phone">Not my number.</string>
+    <string name="not_my_email">Not my email.</string>
+    <string name="title_activity_password_recovery">Password Recovery</string>
+    <string name="recover_your_account">Recover your account</string>
+    <string name="title_activity_password_request">PasswordRequestActivity</string>
+    <string name="request_new_password">Request new password</string>
+    <string name="title_activity_reset_password">Reset Password</string>
+    <string name="hint_recovery_code">Recovery Code</string>
+    <string name="title_activity_profile_edit">Edit Profile</string>
+    <string name="hint_new_user_name">New username</string>
+    <string name="hint_new_bio">New Bio</string>
+    <string name="hint_home_town">Home Town</string>
+    <string name="hint_current_city">Current City</string>
+    <string name="hint_name">Name</string>
+    <string name="update_user_name">Change your username.</string>
+    <string name="user_name">Username</string>
+    <string name="update_phone">Change your phone number.</string>
+    <string name="update_email">Change your email address.</string>
+    <string name="title_activity_profile_item_edit">ProfileItemEditActivity</string>
+    <string name="hint_new_email">New Email Address</string>
+    <string name="hint_new_phone">New Phone Number</string>
+    <string name="sign_out_summary">Sign out from this account.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="guide_change_username">Choose a unique username. Maximum length is 15.</string>
+    <string name="guide_change_email">A verification code will be sent to your email address. You will be required to verify your new email address to continue using VibeCampo.</string>
+    <string name="guide_change_phone">A verification code will be sent to your phone number. You will be required to verify your new phone number to continue using VibeCampo.</string>
+    <string name="title_activity_remove_email_or_phone">RemoveEmailOrPhoneActivity</string>
+    <string name="guide_remove_email">Enter your verified phone number and correct password to remove the following email address associated with your account.</string>
+    <string name="guide_remove_phone">Enter your verified email address and correct password to remove the following phone number associated with your account.</string>
+    <string name="pref_pending_phone_verification">pending_phone_verification</string>
+    <string name="pref_pending_email_verification">pending_email_verification</string>
+    <string name="guide_verify_email">Your email address is not verified. Enter the verification code sent to your email address to proceed.</string>
+    <string name="guide_verify_phone">Your phone number is not verified. Enter the verification code sent to your phone number to proceed.</string>
+    <string name="verifying_verification_link">Verifying verification link…</string>
+    <string name="error_verification_code_length">Verification code must be 6 characters.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="resend">Re-Send</string>
+    <string name="error_profile_update_failed">Profile photo update failed! Please check your network connection.</string>
+    <string name="guide_change_bio">Tell others about you.</string>
+    <string name="title_activity_select_institution">University or College</string>
+    <string name="hint_select_institution">Type your university or college…</string>
+    <string name="hint_select_course">Type course or field studied…</string>
+    <string name="title_activity_initializing">Welcome to VibeCampo</string>
+
+    <string name="message_waiting">Please wait…</string>
+    <string name="pref_initialized">initialized</string>
+    <string name="guide_initializing">If you can not see your university, college or course when you type. Go to \'Settings\' and click on \'University, College and Courses\' option to update your data.</string>
+    <string name="error_empty_fields">You must fill all fields!</string>
+    <string name="guide_delete_account">Your VibeCampo account and associated data will be deleted including all your vibes, comments and photos.</string>
+    <string name="guide_sign_out">Confirm that you want to Sign Out from your account.</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_password_summary">Change your password.</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="error_passwords_dont_match">Passwords do not match!</string>
+    <string name="redeem_points">Redeem Vibits</string>
+    <string name="redeem_points_summary">Redeem your vibits to get airtime, cash money and other gifts.</string>
+    <string name="title_activity_redeem">Redeem Vibits</string>
+    <string name="unblock">Unblock</string>
+    <string name="block">Block</string>
+    <string name="pref_night_mode">night_mode</string>
+    <string name="message_no_data">Nothing here yet, pull down to refresh :(</string>
+    <string name="interest">Interest</string>
+    <string name="skill">Skill</string>
+    <string name="talent">Talent</string>
+    <string name="guide_got_it">GOT IT!</string>
+    <string name="pref_update_device_token">update_device_token</string>
+    <string name="title_activity_feed_likes">Likes</string>
+    <string name="title_activity_news">News and Alerts</string>
+    <string name="pref_last_profile_photo_update">last_profile_photo_update</string>
+    <string name="vibes">Vibes</string>
+    <string name="vibits">Vibits</string>
+    <string name="requested">Requested</string>
+    <string name="message">Message</string>
+    <string name="about">Bio</string>
+    <string name="contacts">Contacts</string>
+    <string name="add_email">Add your email address.</string>
+    <string name="add_phone">Add your phone number</string>
+    <string name="residence">Residence</string>
+    <string name="gender_and_birthday">Gender and Birthday</string>
+    <string name="add_bio">Add your about</string>
+    <string name="schools_attended">Schools Attended</string>
+    <string name="placeholder_summary">Public</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="messages">Messages</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="phone_code">+254</string>
+    <string name="pref_phone_verification_code_sent">phone_verification_code_sent</string>
+    <string name="pref_email_verification_code_sent">email_verification_code_sent</string>
+    <string name="interest_category">#Interest</string>
+    <string name="skill_category">#Skill</string>
+    <string name="talent_category">#Talent</string>
+    <string name="connection_timed_out">Connection timed out!</string>
+
+    <string name="privacy_private">"<![CDATA[<b><font color=#388E3C>Private</b>]]>."</string>
+    <string name="privacy_friend">"<![CDATA[<b><font color=#388E3C>Visible to friends only</b>]]>."</string>
+
+    <string name="summary_news_and_alerts">See VibeCampo News, Offers and Alerts.</string>
+    <string name="pref_bytes_count">bytes_count</string>
+    <string name="server_error">Server error!</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="accept">Accept</string>
+    <string name="rejected">Rejected</string>
+    <string name="private_account">Private Account</string>
+    <string name="unfriend">Unfriend</string>
+    <string name="blocked">Blocked</string>
+    <string name="pref_show_all_vibits_award_notifications">show_all_vibits_award_notifications</string>
+    <string name="exeception">Exception</string>
+    <string name="message_no_more_data">Nothing more, pull down to refresh (:</string>
+    <string name="privacy">Privacy</string>
+    <string name="error_general">An error occurred, Please try again later.</string>
+    <string name="app_name_log">VibeCamp</string>
+    <string name="add_hometown">Add your hometown.</string>
+    <string name="add_current_city">Add your current city.</string>
+    <string name="add_birthday">Add your birthday.</string>
+    <string name="add_institution">Add your campus or college.</string>
+    <string name="unspecified">Unspecified</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="last_updated">Last updated :</string>
+    <string name="recently_used">Recently used</string>
+    <string name="message_no_recent_bio_updates">Nothing here yet :(</string>
+    <string name="empty_string" />
+    <string name="error_invalid_phone">\"Invalid phone number! Don\'t include zero (0).\"</string>
+    <string name="public_">Public</string>
+    <string name="privacy_">Public</string>
+    <string name="private_">Private</string>
+    <string name="pref_use_proxy">use_proxy</string>
+    <string name="restore">Restore</string>
+    <string name="dot"><![CDATA[&#8226;]]></string>
+    <string name="last_seen_today">today at %1$s </string>
+    <string name="last_seen_yesterday">yesterday at %1$s </string>
+    <string name="yesterday">Yesterday</string>
+    <string name="action_copy">Copy</string>
+    <string name="message_copied">Copied successfully.</string>
+    <string name="message_deleted">Messages deleted successfully.</string>
+    <string name="last_seen">last seen %1$s </string>
+    <string name="action_forward">Forward</string>
+    <string name="title_activity_forward_messages">Forward to…</string>
+    <string name="action_clear_chat">Clear chat</string>
+    <string name="chats">Chats</string>
+    <string name="action_background">Background</string>
+    <string name="action_no_background">No background</string>
+    <string name="apply_to_all_chats">Apply to all chats</string>
+    <string name="my_message">My Message</string>
+    <string name="friend_message">Friend\'s message</string>
+    <string name="text">Text color</string>
+    <string name="action_chat_colors">Chat colors</string>
+    <string name="apply_now">Apply now</string>
+    <string name="pref_global_my_message_background">global_my_message_background</string>
+    <string name="pref_global_my_message_text_color">global_my_message_text_color</string>
+    <string name="pref_global_friend_message_background">global_friend_message_background</string>
+    <string name="pref_global_friend_message_text_color">global_friend_message_text_color</string>
+    <string name="default_">Default</string>
+    <string name="you">You</string>
+    <string name="action_info">Info</string>
+    <string name="sending">Sending…</string>
+    <string name="uploading">Uploading</string>
+    <string name="title_activity_search">Suggested…</string>
+    <string name="pref_message_services_running">message_service_running</string>
+    <string name="started">Started </string>
+    <string name="ends">Ends </string>
+    <string name="participants">Participants</string>
+    <string name="title_activity_community">Community</string>
+    <string name="title_activity_photo_edit">Photo Edit</string>
+    <string name="title_activity_photo_effects">Photo Effects</string>
+    <string name="search_prompt">Search for %1$s \n in ?…</string>
+    <string name="bio">Bio</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_people">People</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_activity_feed_view">Feed</string>
+    <string name="comments">Comments</string>
+    <string name="hint_goal_name">Enter goal name</string>
+    <string name="hint_goal_description">Describe your goal</string>
+    <string name="title_activity_create_goal">Create a goal</string>
+    <string name="continue_">Continue</string>
+    <string name="create_a_goal_in">Create a goal in</string>
+    <string name="leaders_board">Leaders Board</string>
+    <string name="check_in">Check In</string>
+    <string name="title_activity_post_vibe">Post a Vibe</string>
+
+</resources>
